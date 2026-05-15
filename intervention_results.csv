@@ -1,0 +1,160 @@
+expression,model,strategy,ECS,correctness,hallucination_rate,robustness_score,hallucination_types,avg_response_time,num_valid_outputs
+(x**3 - 1)/(x - 1),meta-llama/llama-3-8b-instruct,zero_shot,0.5,0.5,0.5,0.5,"['General_Logic_Hallucination', 'none', 'none', 'General_Logic_Hallucination']",1.0350000000000001,4
+(x**3 - 1)/(x - 1),meta-llama/llama-3-8b-instruct,chain_of_thought,0.5,0.5,0.5,0.5,"['none', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",3.1975000000000002,4
+(x**3 - 1)/(x - 1),meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.75,0.75,0.25,0.75,"['none', 'none', 'none', 'General_Logic_Hallucination']",2.665,4
+(x**3 - 1)/(x - 1),meta-llama/llama-3-8b-instruct,self_consistency,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",2.875,4
+(x**3 - 1)/(x - 1),google/gemma-2-9b-it,zero_shot,0.6666666666666666,1.0,0.25,0.8167,"['Invalid_Syntax_Failure', 'none', 'none', 'none']",0.8766666666666666,3
+(x**3 - 1)/(x - 1),google/gemma-2-9b-it,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",3.7824999999999998,4
+(x**3 - 1)/(x - 1),google/gemma-2-9b-it,symbolic_scaffolding,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",3.0225,4
+(x**3 - 1)/(x - 1),google/gemma-2-9b-it,self_consistency,0.6666666666666666,1.0,0.25,0.8167,"['Invalid_Syntax_Failure', 'none', 'none', 'none']",3.2433333333333336,3
+(x**3 - 1)/(x - 1),deepseek/deepseek-chat,zero_shot,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",1.5125000000000002,4
+(x**3 - 1)/(x - 1),deepseek/deepseek-chat,chain_of_thought,1.0,1.0,0.5,0.9,"['none', 'Invalid_Syntax_Failure', 'none', 'Invalid_Syntax_Failure']",5.3975,2
+(x**3 - 1)/(x - 1),deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",3.835,4
+(x**3 - 1)/(x - 1),deepseek/deepseek-chat,self_consistency,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",3.66,4
+(x**3 - 1)/(x - 1),qwen/qwen-2.5-72b-instruct,zero_shot,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",0.8625,4
+(x**3 - 1)/(x - 1),qwen/qwen-2.5-72b-instruct,chain_of_thought,1.0,1.0,0.75,0.85,"['none', 'Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'Invalid_Syntax_Failure']",7.845,1
+(x**3 - 1)/(x - 1),qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,0.6666666666666666,1.0,0.25,0.8167,"['none', 'Invalid_Syntax_Failure', 'none', 'none']",4.3025,3
+(x**3 - 1)/(x - 1),qwen/qwen-2.5-72b-instruct,self_consistency,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",4.5,4
+(x**3 - 8)/(x - 2),meta-llama/llama-3-8b-instruct,zero_shot,0.5,0.5,0.5,0.5,"['none', 'General_Logic_Hallucination', 'General_Logic_Hallucination', 'none']",1.7675,4
+(x**3 - 8)/(x - 2),meta-llama/llama-3-8b-instruct,chain_of_thought,0.5,0.5,0.5,0.5,"['none', 'General_Logic_Hallucination', 'General_Logic_Hallucination', 'none']",7.2525,4
+(x**3 - 8)/(x - 2),meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.5,0.75,0.25,0.65,"['none', 'none', 'General_Logic_Hallucination', 'none']",3.67,4
+(x**3 - 8)/(x - 2),meta-llama/llama-3-8b-instruct,self_consistency,0.5,0.5,0.5,0.5,"['none', 'General_Logic_Hallucination', 'General_Logic_Hallucination', 'none']",5.1225,4
+(x**3 - 8)/(x - 2),google/gemma-2-9b-it,zero_shot,0.6666666666666666,1.0,0.25,0.8167,"['none', 'none', 'Invalid_Syntax_Failure', 'none']",1.596666666666667,3
+(x**3 - 8)/(x - 2),google/gemma-2-9b-it,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",2.3375000000000004,4
+(x**3 - 8)/(x - 2),google/gemma-2-9b-it,symbolic_scaffolding,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",1.66,4
+(x**3 - 8)/(x - 2),google/gemma-2-9b-it,self_consistency,0.6666666666666666,1.0,0.25,0.8167,"['none', 'none', 'Invalid_Syntax_Failure', 'none']",2.9866666666666664,3
+(x**3 - 8)/(x - 2),deepseek/deepseek-chat,zero_shot,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",1.6675,4
+(x**3 - 8)/(x - 2),deepseek/deepseek-chat,chain_of_thought,1.0,1.0,0.75,0.85,"['Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'none', 'Invalid_Syntax_Failure']",9.4975,1
+(x**3 - 8)/(x - 2),deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",6.43,4
+(x**3 - 8)/(x - 2),deepseek/deepseek-chat,self_consistency,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",6.495,4
+(x**3 - 8)/(x - 2),qwen/qwen-2.5-72b-instruct,zero_shot,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",1.7075,4
+(x**3 - 8)/(x - 2),qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",4.4775,4
+(x**3 - 8)/(x - 2),qwen/qwen-2.5-72b-instruct,self_consistency,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",3.535,4
+(x**4 - 16)/(x**2 - 4),meta-llama/llama-3-8b-instruct,zero_shot,0.5,0.5,0.5,0.5,"['none', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",0.825,4
+(x**4 - 16)/(x**2 - 4),meta-llama/llama-3-8b-instruct,chain_of_thought,0.75,0.75,0.25,0.75,"['none', 'none', 'none', 'General_Logic_Hallucination']",3.5975,4
+(x**4 - 16)/(x**2 - 4),meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",2.4050000000000002,4
+(x**4 - 16)/(x**2 - 4),meta-llama/llama-3-8b-instruct,self_consistency,0.5,0.5,0.5,0.5,"['General_Logic_Hallucination', 'General_Logic_Hallucination', 'none', 'none']",3.0875000000000004,4
+(x**4 - 16)/(x**2 - 4),google/gemma-2-9b-it,zero_shot,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",1.06,4
+(x**4 - 16)/(x**2 - 4),google/gemma-2-9b-it,chain_of_thought,0.75,0.75,0.25,0.75,"['General_Logic_Hallucination', 'none', 'none', 'none']",1.865,4
+(x**4 - 16)/(x**2 - 4),google/gemma-2-9b-it,symbolic_scaffolding,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",2.48,4
+(x**4 - 16)/(x**2 - 4),google/gemma-2-9b-it,self_consistency,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",2.7775,4
+(x**4 - 16)/(x**2 - 4),deepseek/deepseek-chat,zero_shot,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",1.4000000000000001,4
+(x**4 - 16)/(x**2 - 4),deepseek/deepseek-chat,chain_of_thought,0.5,0.5,0.75,0.45,"['Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'none', 'Extrinsic_Variable_Invention']",6.975,2
+(x**4 - 16)/(x**2 - 4),deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",5.7225,4
+(x**4 - 16)/(x**2 - 4),deepseek/deepseek-chat,self_consistency,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",12.157499999999999,4
+(x**4 - 16)/(x**2 - 4),qwen/qwen-2.5-72b-instruct,zero_shot,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",0.9325,4
+(x**4 - 16)/(x**2 - 4),qwen/qwen-2.5-72b-instruct,chain_of_thought,1.0,1.0,0.75,0.85,"['Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'none', 'Invalid_Syntax_Failure']",8.1175,1
+(x**4 - 16)/(x**2 - 4),qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",4.8375,4
+(x**4 - 16)/(x**2 - 4),qwen/qwen-2.5-72b-instruct,self_consistency,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",2.8400000000000003,4
+(x**3 - x)/(x),meta-llama/llama-3-8b-instruct,zero_shot,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",0.835,4
+(x**3 - x)/(x),meta-llama/llama-3-8b-instruct,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",2.8375000000000004,4
+(x**3 - x)/(x),meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.75,0.75,0.25,0.75,"['none', 'General_Logic_Hallucination', 'none', 'none']",1.6774999999999998,4
+(x**3 - x)/(x),meta-llama/llama-3-8b-instruct,self_consistency,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",2.8825000000000003,4
+(x**3 - x)/(x),google/gemma-2-9b-it,zero_shot,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",0.9724999999999999,4
+(x**3 - x)/(x),google/gemma-2-9b-it,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",1.775,4
+(x**3 - x)/(x),google/gemma-2-9b-it,symbolic_scaffolding,1.0,1.0,0.25,0.95,"['none', 'none', 'none', 'Invalid_Syntax_Failure']",1.325,3
+(x**3 - x)/(x),google/gemma-2-9b-it,self_consistency,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",3.9225,4
+(x**3 - x)/(x),deepseek/deepseek-chat,zero_shot,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",1.495,4
+(x**3 - x)/(x),deepseek/deepseek-chat,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",5.029999999999999,4
+(x**3 - x)/(x),deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",4.3725000000000005,4
+(x**3 - x)/(x),deepseek/deepseek-chat,self_consistency,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",3.935,4
+(x**3 - x)/(x),qwen/qwen-2.5-72b-instruct,zero_shot,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",0.965,4
+(x**3 - x)/(x),qwen/qwen-2.5-72b-instruct,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",6.605,4
+(x**3 - x)/(x),qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",5.154999999999999,4
+(x**3 - x)/(x),qwen/qwen-2.5-72b-instruct,self_consistency,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",6.827500000000001,4
+(x**4 - 1)/(x**2 - 1),meta-llama/llama-3-8b-instruct,zero_shot,0.5,0.5,0.5,0.5,"['none', 'General_Logic_Hallucination', 'General_Logic_Hallucination', 'none']",0.8374999999999999,4
+(x**4 - 1)/(x**2 - 1),meta-llama/llama-3-8b-instruct,chain_of_thought,0.75,0.75,0.25,0.75,"['none', 'Variable_Loss_Error', 'none', 'none']",2.73,4
+(x**4 - 1)/(x**2 - 1),meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.75,0.75,0.25,0.75,"['none', 'General_Logic_Hallucination', 'none', 'none']",2.7074999999999996,4
+(x**4 - 1)/(x**2 - 1),meta-llama/llama-3-8b-instruct,self_consistency,0.75,0.0,1.0,0.3,"['General_Logic_Hallucination', 'General_Logic_Hallucination', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",2.4375,4
+(x**4 - 1)/(x**2 - 1),google/gemma-2-9b-it,zero_shot,0.5,0.75,0.25,0.65,"['none', 'none', 'General_Logic_Hallucination', 'none']",0.85,4
+(x**4 - 1)/(x**2 - 1),google/gemma-2-9b-it,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",1.975,4
+(x**4 - 1)/(x**2 - 1),google/gemma-2-9b-it,symbolic_scaffolding,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",1.1325,4
+(x**4 - 1)/(x**2 - 1),google/gemma-2-9b-it,self_consistency,0.5,0.75,0.25,0.65,"['none', 'none', 'General_Logic_Hallucination', 'none']",2.755,4
+(x**4 - 1)/(x**2 - 1),deepseek/deepseek-chat,zero_shot,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",1.5,4
+(x**4 - 1)/(x**2 - 1),deepseek/deepseek-chat,chain_of_thought,1.0,1.0,0.75,0.85,"['Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'none']",9.049999999999999,1
+(x**4 - 1)/(x**2 - 1),deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",5.085000000000001,4
+(x**4 - 1)/(x**2 - 1),deepseek/deepseek-chat,self_consistency,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",5.6925,4
+(x**4 - 1)/(x**2 - 1),qwen/qwen-2.5-72b-instruct,zero_shot,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",2.1100000000000003,4
+(x**4 - 1)/(x**2 - 1),qwen/qwen-2.5-72b-instruct,chain_of_thought,1.0,1.0,0.75,0.85,"['Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'none']",8.6525,1
+(x**4 - 1)/(x**2 - 1),qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,0.75,0.75,0.25,0.75,"['General_Logic_Hallucination', 'none', 'none', 'none']",7.115,4
+(x**4 - 1)/(x**2 - 1),qwen/qwen-2.5-72b-instruct,self_consistency,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",8.195,4
+(x**2 - 4)/(x - 2) + (x - 2),meta-llama/llama-3-8b-instruct,zero_shot,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",0.9900000000000001,4
+(x**2 - 4)/(x - 2) + (x - 2),meta-llama/llama-3-8b-instruct,chain_of_thought,0.5,0.5,0.75,0.45,"['Invalid_Syntax_Failure', 'none', 'Invalid_Syntax_Failure', 'General_Logic_Hallucination']",9.932500000000001,2
+(x**2 - 4)/(x - 2) + (x - 2),meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.3333333333333333,0.3333333333333333,0.75,0.3167,"['General_Logic_Hallucination', 'none', 'Invalid_Syntax_Failure', 'General_Logic_Hallucination']",3.265,3
+(x**2 - 4)/(x - 2) + (x - 2),meta-llama/llama-3-8b-instruct,self_consistency,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",2.7550000000000003,4
+(x**2 - 4)/(x - 2) + (x - 2),google/gemma-2-9b-it,zero_shot,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",1.21,4
+(x**2 - 4)/(x - 2) + (x - 2),google/gemma-2-9b-it,chain_of_thought,0.75,0.75,0.25,0.75,"['none', 'none', 'Variable_Loss_Error', 'none']",1.7275,4
+(x**2 - 4)/(x - 2) + (x - 2),google/gemma-2-9b-it,symbolic_scaffolding,0.5,1.0,0.0,0.8,"['none', 'none', 'none', 'none']",2.6675,4
+(x**2 - 4)/(x - 2) + (x - 2),google/gemma-2-9b-it,self_consistency,0.3333333333333333,0.3333333333333333,0.75,0.3167,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'Invalid_Syntax_Failure']",4.18,3
+(x**2 - 4)/(x - 2) + (x - 2),deepseek/deepseek-chat,zero_shot,0.5,0.75,0.25,0.65,"['General_Logic_Hallucination', 'none', 'none', 'none']",1.905,4
+(x**2 - 4)/(x - 2) + (x - 2),deepseek/deepseek-chat,chain_of_thought,1.0,1.0,0.25,0.95,"['none', 'none', 'Invalid_Syntax_Failure', 'none']",7.359999999999999,3
+(x**2 - 4)/(x - 2) + (x - 2),deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",4.7575,4
+(x**2 - 4)/(x - 2) + (x - 2),deepseek/deepseek-chat,self_consistency,0.5,0.5,0.5,0.5,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'none']",4.97,4
+(x**2 - 4)/(x - 2) + (x - 2),qwen/qwen-2.5-72b-instruct,zero_shot,0.5,0.25,0.75,0.35,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",2.6825,4
+(x**2 - 4)/(x - 2) + (x - 2),qwen/qwen-2.5-72b-instruct,chain_of_thought,1.0,1.0,0.75,0.85,"['Invalid_Syntax_Failure', 'none', 'Invalid_Syntax_Failure', 'Invalid_Syntax_Failure']",9.695,1
+(x**2 - 4)/(x - 2) + (x - 2),qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,1.0,1.0,0.25,0.95,"['none', 'none', 'none', 'Invalid_Syntax_Failure']",7.5875,3
+(x**2 - 4)/(x - 2) + (x - 2),qwen/qwen-2.5-72b-instruct,self_consistency,1.0,0.0,1.0,0.4,"['Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'General_Logic_Hallucination']",9.38,1
+(x**2 - 9)/(x - 3) - 1,meta-llama/llama-3-8b-instruct,zero_shot,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",0.905,4
+(x**2 - 9)/(x - 3) - 1,meta-llama/llama-3-8b-instruct,chain_of_thought,0.5,1.0,0.5,0.7,"['Invalid_Syntax_Failure', 'none', 'Invalid_Syntax_Failure', 'none']",3.34,2
+(x**2 - 9)/(x - 3) - 1,meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.5,0.75,0.25,0.65,"['none', 'none', 'General_Logic_Hallucination', 'none']",3.0599999999999996,4
+(x**2 - 9)/(x - 3) - 1,meta-llama/llama-3-8b-instruct,self_consistency,0.25,0.5,0.5,0.4,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'none']",4.005,4
+(x**2 - 9)/(x - 3) - 1,google/gemma-2-9b-it,zero_shot,0.3333333333333333,0.6666666666666666,0.5,0.5,"['Invalid_Syntax_Failure', 'none', 'General_Logic_Hallucination', 'none']",0.8300000000000001,3
+(x**2 - 9)/(x - 3) - 1,google/gemma-2-9b-it,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",2.505,4
+(x**2 - 9)/(x - 3) - 1,google/gemma-2-9b-it,symbolic_scaffolding,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",1.1125,4
+(x**2 - 9)/(x - 3) - 1,google/gemma-2-9b-it,self_consistency,0.3333333333333333,0.6666666666666666,0.5,0.5,"['Invalid_Syntax_Failure', 'none', 'General_Logic_Hallucination', 'none']",2.72,3
+(x**2 - 9)/(x - 3) - 1,deepseek/deepseek-chat,zero_shot,0.5,1.0,0.0,0.8,"['none', 'none', 'none', 'none']",1.4375,4
+(x**2 - 9)/(x - 3) - 1,deepseek/deepseek-chat,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",7.210000000000001,4
+(x**2 - 9)/(x - 3) - 1,deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",5.0600000000000005,4
+(x**2 - 9)/(x - 3) - 1,deepseek/deepseek-chat,self_consistency,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",4.842499999999999,4
+(x**2 - 9)/(x - 3) - 1,qwen/qwen-2.5-72b-instruct,zero_shot,0.6666666666666666,0.6666666666666666,0.5,0.6333,"['Invalid_Syntax_Failure', 'none', 'none', 'General_Logic_Hallucination']",0.9733333333333333,3
+(x**2 - 9)/(x - 3) - 1,qwen/qwen-2.5-72b-instruct,chain_of_thought,1.0,1.0,0.5,0.9,"['Invalid_Syntax_Failure', 'none', 'none', 'Invalid_Syntax_Failure']",8.649999999999999,2
+(x**2 - 9)/(x - 3) - 1,qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,0.75,0.75,0.25,0.75,"['none', 'none', 'General_Logic_Hallucination', 'none']",4.4750000000000005,4
+(x**2 - 9)/(x - 3) - 1,qwen/qwen-2.5-72b-instruct,self_consistency,0.75,0.75,0.25,0.75,"['none', 'none', 'none', 'General_Logic_Hallucination']",5.172499999999999,4
+(x**2 - 1)/(x - 1) + (x - 1),meta-llama/llama-3-8b-instruct,zero_shot,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",0.8325,4
+(x**2 - 1)/(x - 1) + (x - 1),meta-llama/llama-3-8b-instruct,chain_of_thought,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'Extrinsic_Variable_Invention', 'none', 'General_Logic_Hallucination']",3.1950000000000003,4
+(x**2 - 1)/(x - 1) + (x - 1),meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.5,0.75,0.25,0.65,"['none', 'none', 'none', 'General_Logic_Hallucination']",2.9775,4
+(x**2 - 1)/(x - 1) + (x - 1),meta-llama/llama-3-8b-instruct,self_consistency,0.5,0.25,0.75,0.35,"['General_Logic_Hallucination', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",3.4025000000000003,4
+(x**2 - 1)/(x - 1) + (x - 1),google/gemma-2-9b-it,zero_shot,0.5,0.5,0.5,0.5,"['none', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",1.145,4
+(x**2 - 1)/(x - 1) + (x - 1),google/gemma-2-9b-it,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",1.8475000000000001,4
+(x**2 - 1)/(x - 1) + (x - 1),google/gemma-2-9b-it,symbolic_scaffolding,0.75,0.75,0.25,0.75,"['General_Logic_Hallucination', 'none', 'none', 'none']",2.1550000000000002,4
+(x**2 - 1)/(x - 1) + (x - 1),google/gemma-2-9b-it,self_consistency,0.5,0.5,0.5,0.5,"['none', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",10.0575,4
+(x**2 - 1)/(x - 1) + (x - 1),deepseek/deepseek-chat,zero_shot,0.25,0.5,0.5,0.4,"['General_Logic_Hallucination', 'none', 'none', 'General_Logic_Hallucination']",1.4375,4
+(x**2 - 1)/(x - 1) + (x - 1),deepseek/deepseek-chat,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",7.484999999999999,4
+(x**2 - 1)/(x - 1) + (x - 1),deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",5.262500000000001,4
+(x**2 - 1)/(x - 1) + (x - 1),deepseek/deepseek-chat,self_consistency,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",4.665,4
+(x**2 - 1)/(x - 1) + (x - 1),qwen/qwen-2.5-72b-instruct,zero_shot,0.5,0.25,0.75,0.35,"['General_Logic_Hallucination', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",1.0474999999999999,4
+(x**2 - 1)/(x - 1) + (x - 1),qwen/qwen-2.5-72b-instruct,chain_of_thought,1.0,1.0,0.75,0.85,"['Invalid_Syntax_Failure', 'Invalid_Syntax_Failure', 'none', 'Invalid_Syntax_Failure']",6.41,1
+(x**2 - 1)/(x - 1) + (x - 1),qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",4.23,4
+(x**2 - 1)/(x - 1) + (x - 1),qwen/qwen-2.5-72b-instruct,self_consistency,0.5,0.25,0.75,0.35,"['General_Logic_Hallucination', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",2.1225,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,meta-llama/llama-3-8b-instruct,zero_shot,0.25,0.25,0.75,0.25,"['Domain_Transformation_Hallucination', 'General_Logic_Hallucination', 'none', 'General_Logic_Hallucination']",0.7875,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,meta-llama/llama-3-8b-instruct,chain_of_thought,0.75,0.75,0.25,0.75,"['none', 'General_Logic_Hallucination', 'none', 'none']",2.215,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.5,0.75,0.25,0.65,"['none', 'none', 'General_Logic_Hallucination', 'none']",2.4025,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,meta-llama/llama-3-8b-instruct,self_consistency,0.25,0.5,0.5,0.4,"['Domain_Transformation_Hallucination', 'none', 'none', 'General_Logic_Hallucination']",2.1425,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,google/gemma-2-9b-it,zero_shot,0.5,0.75,0.25,0.65,"['none', 'none', 'none', 'General_Logic_Hallucination']",1.2575,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,google/gemma-2-9b-it,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",1.5499999999999998,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,google/gemma-2-9b-it,symbolic_scaffolding,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",2.055,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,google/gemma-2-9b-it,self_consistency,0.5,0.75,0.25,0.65,"['none', 'none', 'none', 'General_Logic_Hallucination']",3.6574999999999998,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,deepseek/deepseek-chat,zero_shot,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",1.625,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,deepseek/deepseek-chat,chain_of_thought,1.0,1.0,0.25,0.95,"['none', 'Invalid_Syntax_Failure', 'none', 'none']",7.152500000000001,3
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",5.199999999999999,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,deepseek/deepseek-chat,self_consistency,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",4.452500000000001,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,qwen/qwen-2.5-72b-instruct,zero_shot,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",0.76,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,qwen/qwen-2.5-72b-instruct,chain_of_thought,0.6666666666666666,0.6666666666666666,0.5,0.6333,"['Invalid_Syntax_Failure', 'General_Logic_Hallucination', 'none', 'none']",6.937500000000001,3
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",4.375,4
+(x**2 - 4)/(x - 2) + sin(x)**2 + cos(x)**2,qwen/qwen-2.5-72b-instruct,self_consistency,0.75,1.0,0.0,0.9,"['none', 'none', 'none', 'none']",2.9175,4
+(x**2 - 16)/(x - 4) + (x - 4),meta-llama/llama-3-8b-instruct,zero_shot,0.75,0.25,0.75,0.45,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",1.0825,4
+(x**2 - 16)/(x - 4) + (x - 4),meta-llama/llama-3-8b-instruct,chain_of_thought,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",2.825,4
+(x**2 - 16)/(x - 4) + (x - 4),meta-llama/llama-3-8b-instruct,symbolic_scaffolding,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",2.5725,4
+(x**2 - 16)/(x - 4) + (x - 4),meta-llama/llama-3-8b-instruct,self_consistency,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",2.3925,4
+(x**2 - 16)/(x - 4) + (x - 4),google/gemma-2-9b-it,zero_shot,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",0.9049999999999999,4
+(x**2 - 16)/(x - 4) + (x - 4),google/gemma-2-9b-it,chain_of_thought,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",2.12,4
+(x**2 - 16)/(x - 4) + (x - 4),google/gemma-2-9b-it,symbolic_scaffolding,0.25,0.5,0.5,0.4,"['General_Logic_Hallucination', 'none', 'none', 'General_Logic_Hallucination']",2.175,4
+(x**2 - 16)/(x - 4) + (x - 4),google/gemma-2-9b-it,self_consistency,0.25,0.25,0.75,0.25,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",3.1299999999999994,4
+(x**2 - 16)/(x - 4) + (x - 4),deepseek/deepseek-chat,zero_shot,0.5,0.5,0.5,0.5,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'none']",1.8275,4
+(x**2 - 16)/(x - 4) + (x - 4),deepseek/deepseek-chat,chain_of_thought,1.0,1.0,0.25,0.95,"['Invalid_Syntax_Failure', 'none', 'none', 'none']",7.9725,3
+(x**2 - 16)/(x - 4) + (x - 4),deepseek/deepseek-chat,symbolic_scaffolding,1.0,1.0,0.0,1.0,"['none', 'none', 'none', 'none']",7.4475,4
+(x**2 - 16)/(x - 4) + (x - 4),deepseek/deepseek-chat,self_consistency,0.5,0.25,0.75,0.35,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",4.65,4
+(x**2 - 16)/(x - 4) + (x - 4),qwen/qwen-2.5-72b-instruct,zero_shot,0.5,0.25,0.75,0.35,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",0.93,4
+(x**2 - 16)/(x - 4) + (x - 4),qwen/qwen-2.5-72b-instruct,chain_of_thought,1.0,1.0,0.5,0.9,"['none', 'none', 'Invalid_Syntax_Failure', 'Invalid_Syntax_Failure']",7.237500000000001,2
+(x**2 - 16)/(x - 4) + (x - 4),qwen/qwen-2.5-72b-instruct,symbolic_scaffolding,0.75,0.75,0.25,0.75,"['General_Logic_Hallucination', 'none', 'none', 'none']",4.145,4
+(x**2 - 16)/(x - 4) + (x - 4),qwen/qwen-2.5-72b-instruct,self_consistency,0.5,0.25,0.75,0.35,"['General_Logic_Hallucination', 'none', 'General_Logic_Hallucination', 'General_Logic_Hallucination']",2.7075,4
