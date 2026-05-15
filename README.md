@@ -4,13 +4,13 @@ This project implements a research framework designed to detect, classify, and m
 
 Key Features
 
-    Perturbation Engine: Automatically generates 10 variants of symbolic expressions, including 6 semantic-preserving forms and 4 adversarial "traps" (e.g., variable remapping and identity multiplication).  
+Perturbation Engine: Automatically generates 10 variants of symbolic expressions, including 6 semantic-preserving forms and 4 adversarial "traps" (e.g., variable remapping and identity multiplication).  
 
 Hallucination Taxonomy: A formal classification system that categorizes errors into six grounded types, such as Extrinsic Variable Invention and Domain Transformation.  
 
 Quantitative Metrics: Uses three specialized metrics to measure model reliability:  
 
-    Expression Consistency Score (ECS): Measures if the model provides the same answer across different syntactic forms.  
+Expression Consistency Score (ECS): Measures if the model provides the same answer across different syntactic forms.  
 
 Correctness Rate: Verifies algebraic accuracy against SymPy ground truth.  
 
@@ -20,7 +20,7 @@ Prompting Interventions: Evaluates strategies like Symbolic Scaffolding and Chai
 
 Core Findings
 
-    Systemic Fragility: In a study of 900 queries, models were correct only 57.6% of the time.  
+ Systemic Fragility: In a study of 900 queries, models were correct only 57.6% of the time.  
 
 Adversarial Brittleness: The "identity multiplication" trap (e⋅y/y) was the most effective failure trigger, causing models to invent variables that weren't in the original problem.  
 
@@ -28,7 +28,7 @@ Scaffolding Success: Symbolic Scaffolding (a four-step structured decomposition)
 
 Tech Stack
 
-    Language: Python   
+ Language: Python   
 
 Symbolic Mathematics: SymPy (for parsing and canonical normalization)   
 
