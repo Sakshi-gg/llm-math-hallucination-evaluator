@@ -1,3 +1,8 @@
+import os
+import sys
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -5,17 +10,21 @@ import seaborn as sns
 import ast
 import time
 
-from perturbation_math import generate_equivalents
-from llm_interface import query_model, query_model_with_strategy
-from normalizer import to_symbolic
-from correctness import compute_ground_truth, compute_correctness
-from stability import (
+from src.perturbation_math import generate_equivalents
+from src.llm_interface import query_model, query_model_with_strategy
+from src.normalizer import to_symbolic
+from src.correctness import compute_ground_truth, compute_correctness
+from src.stability import (
     compute_stability,
     compute_robustness_score,
     compute_response_stats
 )
-from hallucination import analyze_hallucination
+from src.hallucination import analyze_hallucination
 from config import MODELS, INTERVENTION_STRATEGY_NAMES
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+PILOT_RESULTS_PATH = os.path.join(PROJECT_ROOT, "data", "pilot_results.csv")
+INTERVENTION_RESULTS_PATH = os.path.join(PROJECT_ROOT, "data", "intervention_results.csv")
 
 st.set_page_config(page_title="LLM Robustness Dashboard", layout="wide")
 
@@ -29,7 +38,7 @@ st.title("📊 LLM Robustness Evaluation Dashboard")
 @st.cache_data
 def load_data():
     try:
-        return pd.read_csv("pilot_results.csv")
+        return pd.read_csv(PILOT_RESULTS_PATH)
     except:
         return pd.DataFrame()
 
@@ -335,7 +344,7 @@ with tab5:
     @st.cache_data
     def load_intervention_data():
         try:
-            return pd.read_csv("intervention_results.csv")
+            return pd.read_csv(INTERVENTION_RESULTS_PATH)
         except:
             return pd.DataFrame()
 
