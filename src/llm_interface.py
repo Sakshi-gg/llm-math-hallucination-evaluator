@@ -5,7 +5,11 @@ from dotenv import load_dotenv
 from config import TEMPERATURE, MAX_TOKENS, INTERVENTION_STRATEGIES
 
 load_dotenv()
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+try:
+    import streamlit as st
+    API_KEY = st.secrets.get("OPENROUTER_API_KEY") or os.getenv("OPENROUTER_API_KEY")
+except Exception:
+    API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
