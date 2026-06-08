@@ -2,6 +2,9 @@
 
 This project implements a research framework designed to detect, classify, and mitigate **mathematical hallucinations** in Large Language Models (LLMs). Unlike standard factual errors, these hallucinations are "surface-dependent," meaning an LLM may solve a problem correctly in one format but fail when the same expression is slightly rearranged.
 
+## 🚀 Live Demo
+👉 [Click here to view the dashboard](https://llm-math-hallucination-evaluator-k33q9welqekvptgrgr8wr6.streamlit.app/)
+
 ## 🚀 Key Features
 
 * **Perturbation Engine**: Automatically generates 10 variants of symbolic expressions, including 6 semantic-preserving forms and 4 adversarial "traps" (e.g., variable remapping and identity multiplication).
